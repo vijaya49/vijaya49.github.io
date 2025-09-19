@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="OSSPH Freefolio - Anime Template" />
+  <meta property="og:description" content="100% FREE Professional Portfolio Templates - Anime Template" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://freefolio.web.app/anime" />
+  <meta property="og:image" content="https://i.postimg.cc/HnWKRnDB/anime.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image:alt" content="OSSPH Freefolio">
+  <meta name="twitter:title" content="OSSPH Freefolio - Anime Template" />
+  <meta name="twitter:description" content="100% FREE Professional Portfolio Templates - Anime Template" />
+
+  <!-- Icon -->
+  <link type="image/png" sizes="16x16" rel="icon" href="anime.png">
+
+  <!-- Boxicons Script -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Google Fonts Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Kosugi+Maru:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <title>VIJAYARAMA RAO SIRIGIRI</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Kosugi Maru', sans-serif;
+      text-decoration: none;
+      list-style: none;
+      scroll-behavior: smooth;
+      scroll-padding-top: 2rem;
+    }
+
+    :root {
+      --bg--color: #10101a;
+      --main-color: #9370DB;
+      --2nd-main-color: #ffffffcc;
+      --text-color: #fff;
+      --big-font: 5rem;
+      --h2-font: 1.9rem;
+      --p-font: 1rem;
+    }
+
+    body {
+      background-color: var(--bg--color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    /* Header - Improved responsive design */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg--color);
+      padding: 1rem 5%;
+      transition: .3s;
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(147, 112, 219, 0.1);
+    }
+
+    .logo {
+      color: var(--text-color);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 600;
+    }
+
+    span {
+      color: var(--main-color);
+    }
+
+    .navbar {
+      display: flex;
+    }
+
+    .navbar a {
+      color: var(--text-color);
+      font-size: clamp(0.9rem, 1.2vw, 1rem);
+      font-weight: 500;
+      padding: 10px 15px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: var(--main-color);
+      border-bottom: 2px solid var(--main-color);
+    }
+
+    #menu-icon {
+      font-size: 28px;
+      z-index: 10001;
+      cursor: pointer;
+      display: none;
+      color: var(--text-color);
+    }
+
+    /* Section base styling */
+    section {
+      padding: 100px 5% 80px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Home Section - Fully responsive */
+    .home {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 120px;
+    }
+
+    .home-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .home-img img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 20px;
+      filter: drop-shadow(0 10px 30px rgba(147, 112, 219, 0.3));
+    }
+
+    .home-text h5 {
+      color: var(--text-color);
+      font-size: clamp(1.2rem, 2vw, 1.5rem);
+      font-weight: 500;
+      margin: 0 0 1rem;
+    }
+
+    .home-text h1 {
+      color: var(--text-color);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 700;
+      margin: 0 0 1rem;
+      line-height: 1.1;
+    }
+
+    .home-text h6 {
+      color: var(--text-color);
+      font-size: clamp(1rem, 1.5vw, 1.2rem);
+      font-weight: 500;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: var(--main-color);
+      color: var(--text-color);
+      box-shadow: 4px 4px var(--text-color);
+      display: inline-block;
+      padding: 12px 30px;
+      border: 1px solid transparent;
+      font-size: clamp(0.9rem, 1.2vw, 1rem);
+      font-weight: 500;
+      letter-spacing: 1px;
+      transition: all 0.35s ease;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: var(--text-color);
+      color: var(--main-color);
+      box-shadow: 4px 4px var(--main-color);
+      transform: translateY(-2px);
+    }
+
+    /* About Section - Responsive grid */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-img {
+      display: flex;
+      justify-content: center;
+    }
+
+    .about-img img {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+      border-radius: 15px;
+      filter: drop-shadow(0 8px 25px rgba(147, 112, 219, 0.2));
+    }
+
+    .about-text h3 {
+      color: var(--text-color);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 300;
+      margin: 0 0 1.5rem;
+      letter-spacing: 4px;
+    }
+
+    .about-text h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 500;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text p {
+      color: var(--2nd-main-color);
+      font-size: clamp(0.9rem, 1.2vw, 1rem);
+      font-weight: 300;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .main-btn .btn {
+      font-size: clamp(0.8rem, 1vw, 0.9rem);
+      padding: 8px 20px;
+    }
+
+    /* Services Section - Responsive cards */
+    .center {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .center h3 {
+      color: var(--text-color);
+      font-size: clamp(1.8rem, 3vw, 2.2rem);
+      font-weight: 300;
+      letter-spacing: 4px;
+    }
+
+    .service-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .row {
+      background: #0b0b13;
+      padding: 2.5rem 2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .4s ease;
+      border: 1px solid rgba(147, 112, 219, 0.1);
+    }
+
+    .row i {
+      color: var(--main-color);
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .row h3 {
+      font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      color: var(--text-color);
+    }
+
+    .row p {
+      font-size: clamp(0.9rem, 1.1vw, 1rem);
+      color: var(--2nd-main-color);
+      line-height: 1.7;
+    }
+
+    .row ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .row ul li {
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .row ul li::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--main-color);
+    }
+
+    .row:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--main-color);
+    }
+
+    /* CTA Section */
+    .cta {
+      background: linear-gradient(135deg, #0b0b13 0%, #1a1a2e 100%);
+      width: 100%;
+      padding: 80px 5%;
+      text-align: center;
+      margin: 80px 0;
+      border-radius: 15px;
+    }
+
+    .cta h4 {
+      color: var(--text-color);
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      font-weight: 300;
+      margin-bottom: 2rem;
+    }
+
+    /* Resume, Education, Certifications Sections */
+    .resume, .education, .Certifications {
+      text-align: center;
+    }
+
+    .resume-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .box {
+      background: #0b0b13;
+      padding: 2.5rem 2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all .4s ease;
+      border: 1px solid rgba(147, 112, 219, 0.1);
+    }
+
+    .box h6 {
+      color: #3e4455;
+      font-size: clamp(0.8rem, 1vw, 0.9rem);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .box h4 {
+      color: var(--text-color);
+      font-size: clamp(1.1rem, 1.5vw, 1.4rem);
+      font-weight: 700;
+      margin: 1.5rem 0 1rem;
+    }
+
+    .box p {
+      font-size: clamp(0.9rem, 1.1vw, 1rem);
+      font-weight: 300;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      color: var(--2nd-main-color);
+    }
+
+    .box h5 {
+      font-size: clamp(0.8rem, 1vw, 0.9rem);
+      font-weight: 500;
+      color: var(--2nd-main-color);
+    }
+
+    .box:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--main-color);
+    }
+
+    /* Contact Section - Updated for contact info display */
+    .contact {
+      text-align: center;
+    }
+
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+    .contact-info-container {
+      width: 100%;
+      max-width: 600px;
+      background: #0b0b13;
+      border-radius: 15px;
+      padding: 3rem 2.5rem;
+      border: 1px solid rgba(147, 112, 219, 0.1);
+      transition: all 0.4s ease;
+    }
+
+    .contact-info-container:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--main-color);
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(147, 112, 219, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-item:hover {
+      background: rgba(147, 112, 219, 0.05);
+      border-radius: 8px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .contact-item i {
+      color: var(--main-color);
+      font-size: 1.5rem;
+      margin-right: 1.5rem;
+      width: 30px;
+      text-align: center;
+    }
+
+    .contact-details {
+      flex: 1;
+      text-align: left;
+    }
+
+    .contact-label {
+      color: var(--main-color);
+      font-size: clamp(0.8rem, 1vw, 0.9rem);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .contact-value {
+      color: var(--text-color);
+      font-size: clamp(1rem, 1.2vw, 1.1rem);
+      font-weight: 500;
+      word-break: break-all;
+    }
+
+    .contact-value a {
+      color: var(--text-color);
+      transition: color 0.3s ease;
+    }
+
+    .contact-value a:hover {
+      color: var(--main-color);
+    }
+
+    /* Social Icons */
+    .icons-container {
+      text-align: center;
+      margin: 2rem 0;
+      padding: 2rem 0;
+    }
+
+    .icons-container a {
+      display: inline-block;
+      margin: 0 1rem;
+      color: var(--main-color);
+      font-size: 1.8rem;
+      transition: all 0.3s ease;
+    }
+
+    .icons-container a:hover {
+      color: #7a3fc3;
+      transform: translateY(-5px);
+    }
+
+    /* Skills Section - Updated for progress bars */
+    .skills-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .skill-item {
+      background: #0b0b13;
+      padding: 2rem;
+      border-radius: 10px;
+      transition: all .4s ease;
+      border: 1px solid rgba(147, 112, 219, 0.1);
+    }
+
+    .skill-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.3);
+      border-color: var(--main-color);
+    }
+
+    .skill-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-header i {
+      color: var(--main-color);
+      font-size: 2.5rem;
+      margin-right: 1rem;
+    }
+
+    .skill-title {
+      font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+      font-weight: 500;
+      color: var(--text-color);
+    }
+
+    .skill-details {
+      margin-bottom: 1rem;
+    }
+
+    .skill-name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-name span {
+      font-size: clamp(0.9rem, 1.1vw, 1rem);
+      color: var(--text-color);
+      font-weight: 400;
+    }
+
+    .skill-percentage {
+      color: var(--main-color);
+      font-weight: 600;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: #1a1a2e;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--main-color) 0%, #7a3fc3 100%);
+      border-radius: 4px;
+      transition: width 2s ease-in-out;
+      width: 0%;
+    }
+
+    /* Animation for progress bars */
+    .skill-item.animate .progress-fill {
+      animation: fillProgress 2s ease-in-out forwards;
+    }
+
+    @keyframes fillProgress {
+      from { width: 0%; }
+    }
+    .monitoring-icon {
+      font-size: 3rem !important;
+      color: #06b6d4;
+      transition: all 0.3s ease;
+    }
+
+    .monitoring-icon:hover {
+      color: #0891b2;
+      transform: scale(1.1);
+    }
+
+    .ecs-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 1.5rem;
+    }
+    /* Responsive Media Queries */
+    
+    /* Large desktops (1200px and up) */
+    @media (min-width: 1200px) {
+      section {
+        padding: 120px 8% 100px;
+      }
+      
+      .home {
+        gap: 5rem;
+      }
+      
+      .about {
+        gap: 5rem;
+      }
+      
+      .service-content {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      
+      .resume-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Medium desktops (992px to 1199px) */
+    @media (max-width: 1199px) {
+      .service-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Tablets (768px to 991px) */
+    @media (max-width: 991px) {
+      header {
+        padding: 1rem 3%;
+      }
+      
+      .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+        padding-top: 100px;
+      }
+      
+      .about {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+      }
+      
+      .service-content {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .resume-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .button-container {
+        justify-content: center;
+      }
+
+      .contact-item {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .contact-details {
+        text-align: center;
+      }
+    }
+
+    /* Mobile landscape (576px to 767px) */
+    @media (max-width: 767px) {
+      header {
+        padding: 1rem 3%;
+      }
+      
+      #menu-icon {
+        display: block;
+      }
+      
+      .navbar {
+        background: rgba(11, 11, 19, 0.95);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: -500px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+        text-align: left;
+        transition: 0.3s ease;
+        border-radius: 0 0 15px 15px;
+      }
+      
+      .navbar a {
+        display: block;
+        margin: 0;
+        padding: 1.2rem 2rem;
+        border-left: 3px solid transparent;
+        border-bottom: 1px solid rgba(147, 112, 219, 0.1);
+      }
+      
+      .navbar a:hover {
+        border-left-color: var(--main-color);
+        background: rgba(147, 112, 219, 0.1);
+      }
+      
+      .navbar.active {
+        top: 100%;
+      }
+      
+      section {
+        padding: 80px 5% 60px;
+      }
+      
+      .home {
+        padding-top: 120px;
+        min-height: auto;
+      }
+      
+      .service-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .cta {
+        padding: 60px 5%;
+        margin: 60px 0;
+      }
+
+      .contact-info-container {
+        padding: 2rem 1.5rem;
+      }
+
+      .contact-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      .contact-item i {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    /* Mobile portrait (up to 575px) */
+    @media (max-width: 575px) {
+      header {
+        padding: 0.8rem 4%;
+      }
+      
+      section {
+        padding: 60px 4% 50px;
+      }
+      
+      .home {
+        gap: 2rem;
+        padding-top: 100px;
+      }
+      
+      .about {
+        gap: 2rem;
+      }
+      
+      .service-content {
+        gap: 1.5rem;
+      }
+      
+      .row {
+        padding: 2rem 1.5rem;
+      }
+      
+      .resume-content {
+        gap: 1.5rem;
+      }
+      
+      .box {
+        padding: 2rem 1.5rem;
+      }
+      
+      .button-container {
+        gap: 10px;
+      }
+      
+      .main-btn .btn {
+        padding: 6px 15px;
+        font-size: 0.8rem;
+      }
+      
+      .icons-container a {
+        margin: 0 0.8rem;
+        font-size: 1.5rem;
+      }
+      
+      .contact-info-container {
+        padding: 1.5rem 1rem;
+      }
+
+      .contact-value {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Extra small devices (up to 375px) */
+    @media (max-width: 375px) {
+      header {
+        padding: 0.8rem 3%;
+      }
+      
+      section {
+        padding: 50px 3% 40px;
+      }
+      
+      .row, .box {
+        padding: 1.5rem 1rem;
+      }
+      
+      .button-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .main-btn .btn {
+        width: 100px;
+        text-align: center;
+      }
+
+      .contact-info-container {
+        padding: 1.5rem 0.8rem;
+      }
+    }
+
+    /* Smooth animations for better UX */
+    .home-text, .home-img, .about-text, .about-img {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Loading animation for images */
+    img {
+      transition: opacity 0.3s ease;
+    }
+
+    img:not([src]) {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">Vi<span>jay</span></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#resume">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#Certifications">Certifications</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-text">
+      <h5>Hello, I'm</h5>
+      <h1>Vijayarama Rao</h1>
+      <h6>A passionate <span>AWS DevOps Engineer</span> blending creativity, humor, and technical expertise to build scalable <span>DevOps</span> solutions that keep systems resilient and teams smiling.</h6>
+      <a href="Vijayaramarao_Sirigiri_Resume.pdf" class="btn" target="_blank">Download CV</a>
+    </div>
+    <div class="home-img">
+      <img src="home.png" alt="Vijayarama Rao">
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="about.png" alt="About Me">
+    </div>
+    <div class="about-text">
+      <h3>About Me</h3>
+      <h2>I'm a DevOps Engineer.</h2>
+      <p>AWS Certified DevOps Engineer with <span>5+ years</span> of turning complex cloud challenges into scalable, reliable solutions. I specialize in <span>Kubernetes, Infrastructure as Code (IAC),</span> and high-availability systems—keeping production at <span>99.9%+</span> uptime. Known for cutting deployment times by <span>70%</span> and slashing costs by <span>30%</span> through smart automation and optimization, I bring both technical depth and creative problem-solving to every project.</p>
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Services Section -->
+  <section class="services" id="services">
+    <div class="center">
+      <h3>WHAT I DO?</h3>
+    </div>
+    <div class="service-content">
+      <!-- Service 01 -->
+      <div class="row">
+        <i class='bx bx-server monitoring-icon'></i>
+        <h3>Architecture & Infrastructure</h3>
+        <p>
+          <ul>
+            <li>Design and implement scalable, secure, and highly available infrastructure (on-prem or cloud)</li>
+            <li>Use Infrastructure as Code (Terraform, CloudFormation, Ansible)</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Service 02 -->
+      <div class="row">
+        <i class='bx bx-cog monitoring-icon'></i>
+        <h3>Automation</h3>
+        <p>
+          <ul>
+            <li>Automate repetitive tasks like provisioning, deployments, scaling, and patching</li>
+            <li>Write scripts in Python, Bash, or Go to reduce manual effort</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Service 03 -->
+      <div class="row">
+        <i class='bx bx-git-compare monitoring-icon'></i>
+        <h3>CI/CD Pipelines</h3>
+        <p>
+          <ul>
+            <li>Build and maintain pipelines for continuous integration and delivery</li>
+            <li>Tools: GitHub Actions, Jenkins, GitLab CI, AWS CodePipeline, ArgoCD</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Service 04 -->
+      <div class="row">
+        <i class='bx bxl-kubernetes monitoring-icon'></i>
+        <h3>Kubernetes & Containers</h3>
+        <p>
+          <ul>
+            <li>Containerize apps using Docker</li>
+            <li>Manage workloads, scaling, and service discovery with Kubernetes (or ECS, EKS, AKS)</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Service 05 -->
+      <div class="row">
+        <i class="bx bx-line-chart monitoring-icon"></i>
+        <h3>Monitoring & Reliability</h3>
+        <p>
+          <ul>
+            <li>Implement monitoring, logging, and alerting to ensure system reliability</li>
+            <li>Tools: Prometheus, Grafana, ELK, CloudWatch</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Service 06 -->
+      <div class="row">
+        <i class='bx bx-shield monitoring-icon'></i>
+        <h3>Security & Compliance</h3>
+        <p>
+          <ul>
+            <li>Manage secrets, IAM roles, and access policies</li>
+            <li>Ensure deployments follow security best practices (DevSecOps)</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- CTA Section -->
+  <section class="cta">
+    <h4>Let's make something great together!</h4>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Experience Section -->
+  <section class="resume" id="resume">
+    <div class="center">
+      <h3>Professional Experience</h3>
+    </div>
+    <div class="resume-content">
+      <!-- Experience 01 -->
+      <div class="box">
+        <h6>May 2022 - Present</h6>
+        <h4>Senior Cloud Administrator</h4>
+        <p>ZS Associates</p>
+        <h5>Pune, Maharashtra</h5>
+      </div>
+
+      <!-- Experience 02 -->
+      <div class="box">
+        <h6>April 2021 - May 2022</h6>
+        <h4>Associate Cloud Engineer</h4>
+        <p>Engro Technologies Private Ltd.</p>
+        <h5>Hyderabad, Telangana</h5>
+      </div>
+
+      <!-- Experience 03 -->
+      <div class="box">
+        <h6>February 2021 - April 2021</h6>
+        <h4>Associate Cloud Engineer</h4>
+        <p>ZEE Entertainment Enterprises Ltd.</p>
+        <h5>Hyderabad, Telangana</h5>
+      </div>
+
+      <!-- Experience 04 -->
+      <div class="box">
+        <h6>April 2019 - December 2019</h6>
+        <h4>Linux Administrator - Trainee</h4>
+        <p>Hallmark Global Technologies</p>
+        <h5>Hyderabad, Telangana</h5>
+      </div>
+    </div>
+  </section>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="center">
+      <h3>TECHNICAL SKILLS</h3>
+    </div>
+    <div class="skills-content">
+      <!-- Operating Systems -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bx-desktop'></i>
+          <h3 class="skill-title">Operating Systems</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Linux (Ubuntu, CentOS, RHEL)</span>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Windows Server</span>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="75"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Providers -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bx-cloud'></i>
+          <h3 class="skill-title">Cloud Providers</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>AWS (EC2, S3, ECS, EKS)</span>
+            <span class="skill-percentage">95%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="95"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>AWS Lambda & CloudWatch</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Infrastructure as Code -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bx-code-alt'></i>
+          <h3 class="skill-title">Infrastructure as Code</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Terraform</span>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>AWS CloudFormation</span>
+            <span class="skill-percentage">80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="80"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Containerization -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bxl-docker'></i>
+          <h3 class="skill-title">Containerization</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Docker</span>
+            <span class="skill-percentage">88%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="88"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Docker Compose</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container Orchestration -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bxl-kubernetes'></i>
+          <h3 class="skill-title">Container Orchestration</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Kubernetes</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>AWS EKS</span>
+            <span class="skill-percentage">80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="80"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Version Control -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bxl-git'></i>
+          <h3 class="skill-title">Version Control</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Git</span>
+            <span class="skill-percentage">92%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="92"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>GitHub & GitLab</span>
+            <span class="skill-percentage">88%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="88"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CI/CD -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bx-git-compare'></i>
+          <h3 class="skill-title">CI/CD Pipelines</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>GitHub Actions</span>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>AWS CodePipeline</span>
+            <span class="skill-percentage">82%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="82"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>TeamCity</span>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="75"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GitOps & Package Manager -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bx-git-branch'></i>
+          <h3 class="skill-title">GitOps & Package Management</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>ArgoCD</span>
+            <span class="skill-percentage">78%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="78"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Helm</span>
+            <span class="skill-percentage">80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="80"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scripting Languages -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bx-terminal'></i>
+          <h3 class="skill-title">Scripting Languages</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Python</span>
+            <span class="skill-percentage">85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Bash Scripting</span>
+            <span class="skill-percentage">88%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="88"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Monitoring & Security -->
+      <div class="skill-item">
+        <div class="skill-header">
+          <i class='bx bx-shield'></i>
+          <h3 class="skill-title">Monitoring & Security</h3>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>Prometheus & Grafana</span>
+            <span class="skill-percentage">82%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="82"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>ELK Stack</span>
+            <span class="skill-percentage">78%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="78"></div>
+          </div>
+        </div>
+        <div class="skill-details">
+          <div class="skill-name">
+            <span>DevSecOps</span>
+            <span class="skill-percentage">75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-width="75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="center">
+      <h3>PROJECTS</h3>
+    </div>
+    <div class="service-content">
+      <!-- Project 01 -->
+      <div class="row" onclick="window.open('https://medium.com/@vijay49m/automating-cross-repository-ci-cd-with-github-actions-and-aws-ecs-3364f4497566','_blank')" style="cursor:pointer;">
+        <div class="ecs-icon monitoring-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <!-- Hexagon background (purple like K8s) -->
+          <path fill="#7a3fc3" d="M24 2L4 12v24l20 10 20-10V12L24 2z"/>
+          <!-- ECS cube symbol (black/dark like K8s wheel) -->
+          <path fill="#000000" d="M14 19v10l10 5 10-5V19l-10-5-10 5z"/>
+        </svg>
+      </div>
+        <h3>End-to-End Multi-Repository GitHub ECS CI/CD Pipeline</h3>
+        <p>
+          <ul>
+            <li>Built automated CI/CD pipeline for containerized applications using AWS ECS Fargate</li>
+            <li>Integrated with GitHub Actions for seamless deployment and rollback capabilities</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Project 02 -->
+      <div class="row">
+        <i class='bx bxl-kubernetes monitoring-icon'></i>
+        <h3>Kubernetes Multi-Cloud Setup</h3>
+        <p>
+          <ul>
+            <li>Deployed and managed Kubernetes clusters across multiple cloud providers</li>
+            <li>Implemented service mesh architecture with Istio for traffic management</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Project 03 -->
+      <div class="row">
+        <i class='bx bx-code-alt monitoring-icon'></i>
+        <h3>Infrastructure as Code (Terraform)</h3>
+        <p>
+          <ul>
+            <li>Automated infrastructure provisioning using Terraform modules</li>
+            <li>Managed multi-environment deployments with consistent configurations</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Project 04 -->
+      <div class="row">
+        <i class='bx bx-trending-up monitoring-icon'></i>
+        <h3>Monitoring & Observability Stack</h3>
+        <p>
+          <ul>
+            <li>Implemented comprehensive monitoring using Prometheus, Grafana, and ELK stack</li>
+            <li>Set up alerting systems and SLA monitoring for critical applications</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Project 05 -->
+      <div class="row">
+        <i class='bx bx-cloud monitoring-icon'></i>
+        <h3>Cloud Migration & Optimization</h3>
+        <p>
+          <ul>
+            <li>Led migration of legacy applications to AWS cloud infrastructure</li>
+            <li>Achieved 30% cost reduction through resource optimization and auto-scaling</li>
+          </ul>
+        </p>
+      </div>
+
+      <!-- Project 06 -->
+      <div class="row">
+        <i class='bx bx-shield monitoring-icon'></i>
+        <h3>DevSecOps Implementation</h3>
+        <p>
+          <ul>
+            <li>Integrated security scanning and compliance checks in CI/CD pipelines</li>
+            <li>Implemented secret management and access control policies</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Certifications Section -->
+  <section class="Certifications" id="Certifications">
+    <div class="center">
+      <h3>Certifications</h3>
+    </div>
+    <div class="resume-content">
+      <div class="box">
+        <h4>AWS Solution Architect Associate (AWS-CSAA)</h4>
+        <p>Amazon Web Services</p>
+        <h5>Cloud Architecture & Solutions Design</h5>
+      </div>
+      <div class="box">
+        <h4>HashiCorp Terraform Associate Certificate</h4>
+        <p>HashiCorp</p>
+        <h5>Infrastructure as Code & Automation</h5>
+      </div>
+      <!-- <div class="box">
+        <h4>Certified Kubernetes Administrator (CKA)</h4>
+        <p>Cloud Native Computing Foundation</p>
+        <h5>Container Orchestration & Management</h5>
+      </div>
+      <div class="box">
+        <h4>Docker Certified Associate</h4>
+        <p>Docker Inc.</p>
+        <h5>Containerization & Microservices</h5>
+      </div> -->
+    </div>
+  </section>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Education Section -->
+  <section class="education" id="education">
+    <div class="center">
+      <h3>Education</h3>
+    </div>
+    <div class="resume-content">
+      <!-- Education 01 -->
+      <div class="box">
+        <h6>2016 - 2018</h6>
+        <h4>Masters of Technology</h4>
+        <p>VNR Vignan Jyothi Institute of Technology and Sciences</p>
+        <h5>Hyderabad</h5>
+      </div>
+
+      <!-- Education 02 -->
+      <div class="box">
+        <h6>2011 - 2015</h6>
+        <h4>Bachelors of Technology</h4>
+        <p>Swarna Bharathi Institute of Science and Technology</p>
+        <h5>Khammam</h5>
+      </div>
+
+      <!-- Education 03 -->
+      <div class="box">
+        <h6>2009 - 2011</h6>
+        <h4>Intermediate (+2)</h4>
+        <p>Siri Chaitanya Junior College</p>
+        <h5>Khammam</h5>
+      </div>
+
+      <!-- Education 04 -->
+      <div class="box">
+        <h6>1999 - 2009</h6>
+        <h4>State Secondary Board</h4>
+        <p>Vignan Vidyaniketan</p>
+        <h5>Khammam</h5>
+      </div>
+    </div>
+  </section>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="center">
+      <h3>Get In Touch</h3>
+    </div>
+    <div class="contact-info">
+      <div class="contact-info-container">
+        <!-- Name -->
+        <div class="contact-item">
+          <i class='bx bx-user'></i>
+          <div class="contact-details">
+            <div class="contact-label">Name</div>
+            <div class="contact-value">Vijayarama Rao Sirigiri</div>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-item">
+          <i class='bx bx-envelope'></i>
+          <div class="contact-details">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">
+              <a href="mailto:vijay49m@gmail.com">vijay49m@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="contact-item">
+          <i class='bx bx-phone'></i>
+          <div class="contact-details">
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">
+              <a href="tel:+916301773727">+91 6301773727</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="contact-item">
+          <i class='bx bx-map'></i>
+          <div class="contact-details">
+            <div class="contact-label">Location</div>
+            <div class="contact-value">Hyderabad, Telangana, India</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <!-- Social Icons -->
+  <div class="icons-container">
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/vijayarama-rao-sirigiri-9615041bb/" target="_blank" aria-label="LinkedIn">
+      <i class='bx bxl-linkedin'></i>
+    </a>
+    <!-- GitHub -->
+    <a href="https://github.com/vijaya49" target="_blank" aria-label="GitHub">
+      <i class='bx bxl-github'></i>
+    </a>
+    <!-- Medium -->
+    <a href="https://medium.com/@vijay49m" target="_blank" aria-label="Medium">
+      <i class='bx bxl-medium'></i>
+    </a>
+  </div>
+  <!-------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------->
+  <script>
+    // Mobile menu toggle
+    let menu = document.querySelector('#menu-icon');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+    };
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.navbar a').forEach(link => {
+      link.onclick = () => {
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('active');
+      };
+    });
+
+    // Close mobile menu when scrolling
+    window.onscroll = () => {
+      menu.classList.remove('bx-x');
+      navbar.classList.remove('active');
+    };
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add active class to navbar links based on scroll position
+    window.addEventListener('scroll', () => {
+      let sections = document.querySelectorAll('section');
+      let navLinks = document.querySelectorAll('.navbar a');
+      
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= sectionTop - 200) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Loading animation for images
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+        img.onload = () => {
+          img.style.opacity = '1';
+        };
+      });
+    });
+
+    // Animate elements on scroll (simple intersection observer)
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 0.8s ease-out forwards';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections for animation
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
